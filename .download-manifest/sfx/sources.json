@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "source": "https://makotohiramatsu.itch.io/dungeon-crawl-game-sounds",
+      "files": [
+        {
+          "name": "DungonCrawlGameSounds.zip",
+          "bytes": 0,
+          "sha256": ""
+        }
+      ]
+    },
+    {
+      "source": "https://leohpaz.itch.io/minifantasy-forgotten-plains-sfx-pack",
+      "files": [
+        {
+          "name": "Minifantasy_Forgotten_Plains_SFX.zip",
+          "bytes": 0,
+          "sha256": ""
+        },
+        {
+          "name": "Minifantasy_ForgottenPlains_Music.zip",
+          "bytes": 0,
+          "sha256": ""
+        },
+        {
+          "name": "Minifantasy_ForgottenPlains_v3.6_Free_Version.zip",
+          "bytes": 0,
+          "sha256": ""
+        }
+      ]
+    },
+    {
+      "source": "https://heltonyan.itch.io/pixelcombat",
+      "files": [
+        {
+          "name": "Helton Yan's Pixel Combat - Single Files.zip",
+          "bytes": 0,
+          "sha256": ""
+        }
+      ]
+    }
+  ]
+}
