@@ -1,0 +1,2 @@
+# assets
+binary files (mostly)
