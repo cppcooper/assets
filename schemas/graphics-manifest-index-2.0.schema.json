@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "graphics-manifest-index-2.0.schema.json",
+  "title": "Graphics Manifest Index 2.0",
+  "description": "A graphics-manifests.json index selects registered graphics-definition documents for automatic loading.",
+  "$comment": "Indexes live under a directory named graphics. References resolve from that enclosing graphics/ directory and must identify exact registered files. Repeated references are loaded once. Runtime loading does not open this schema or unreferenced JSON files.",
+  "type": "object",
+  "required": [
+    "version",
+    "manifests"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional editor-resolvable schema reference; the runtime does not load this file."
+    },
+    "version": {
+      "const": "2.0"
+    },
+    "manifests": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:]+\\.[jJ][sS][oO][nN]$",
+        "description": "Forward-slash JSON path relative to the enclosing graphics/ directory. The target must be a registered graphics-definition document, not another index. Parent traversal is not allowed."
+      }
+    }
+  },
+  "additionalProperties": false
+}
