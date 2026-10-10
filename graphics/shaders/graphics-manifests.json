@@ -1,0 +1,5 @@
+{
+  "$schema": "../../schemas/graphics-manifest-index-2.0.schema.json",
+  "version": "2.0",
+  "manifests": ["shaders/main.json"]
+}
