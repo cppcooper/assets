@@ -1,0 +1,50 @@
+# Downloaded archives and extracted collections are populated locally.
+/.download-manifest/**
+/audio/**
+/graphics/textures/**
+
+# Keep directories traversable so source and metadata exceptions can apply.
+!**/
+!**/*.json
+!**/*.md
+!**/*.txt
+!**/*.url
+!**/*.py
+!**/*.sh
+!**/*.ps1
+
+# Small shared UI resources are kept with the source and font assets.
+!/graphics/textures/ui/*.[pP][nN][gG]
+
+# Archives stay local even if they appear outside a download directory.
+*.[zZ][iI][pP]
+*.7[zZ]
+*.[rR][aA][rR]
+*.[tT][aA][rR]
+*.[gG][zZ]
+*.[bB][zZ]2
+*.[xX][zZ]
+*.[zZ][sS][tT]
+*.[tT][gG][zZ]
+*.[tT][bB][zZ]
+*.[tT][bB][zZ]2
+*.[tT][xX][zZ]
+*.[tT][zZ][sS][tT]
+
+# Local tools, editor state, logs, and interrupted downloads.
+.idea/
+.obsidian/
+.trash/
+/.cache/
+__pycache__/
+*.py[cod]
+*.log
+*.part
+*.partial
+*.download
+*.crdownload
+.DS_Store
+Thumbs.db
+
+# Git ignore rules cannot filter by size. Keep other committed binaries at or
+# below 5 MiB; larger files and bulk collections belong in external downloads.
