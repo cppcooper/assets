@@ -1,0 +1,13 @@
+{
+  "$schema": "../schemas/graphics-manifest-index-2.0.schema.json",
+  "version": "2.0",
+  "manifests": [
+    "definitions/MiniWorldSprites/atlas.json",
+    "definitions/MiniWorldSprites/buildings-colored.json",
+    "definitions/MiniWorldSprites/Buildings/Enemy/Orc/buildings-orc.json",
+    "definitions/char-customizer/character-customizer.json",
+    "definitions/tilesets/dungeon_tiles.json",
+    "definitions/tilesets/magecity.json",
+    "definitions/tilesets/punyworld-overworld.json"
+  ]
+}

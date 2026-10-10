@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/graphics/sprite-tileset-manifest-2.0.schema.json",
+  "asset_class": "sprite-tileset",
+  "version": "2.0",
+  "namespace": "character-customizer",
+  "texture": "textures/char-customizer/Character-Customizer-Photoshop.png",
+  "defaults": {
+    "sprite": {
+      "pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "tileset": {
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "sprites": {
+    "character_customizer_flattened": {
+      "description": "Flattened export of the layered character customizer artwork.",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 20,
+        "columns": 5,
+        "cell_order": "row-major"
+      }
+    }
+  }
+}

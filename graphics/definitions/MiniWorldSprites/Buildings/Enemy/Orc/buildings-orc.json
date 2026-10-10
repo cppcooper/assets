@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../../../schemas/graphics/sprite-tileset-manifest-2.0.schema.json",
+  "asset_class": "sprite-tileset",
+  "version": "2.0",
+  "namespace": "miniworld-buildings-orc",
+  "texture": "textures/MiniWorldSprites/Buildings/Enemy/Orc/AllBuildings-Preview.png",
+  "defaults": {
+    "sprite": {
+      "pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "tileset": {
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "tilesets": {
+    "orc_buildings_32x32": {
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 32,
+          "height": 32
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 2,
+        "columns": 8,
+        "cell_order": "row-major"
+      }
+    },
+    "orc_buildings_16x16": {
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 64
+        },
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 8,
+        "columns": 16,
+        "cell_order": "row-major"
+      }
+    }
+  }
+}
