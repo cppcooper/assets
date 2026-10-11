@@ -36,9 +36,10 @@ workflow depend on them.
 - The Minifantasy visual assets are correctly associated with Krishna
   Palacio's page. The old SFX record had incorrectly associated them with
   Leohpaz's audio page.
-- `.gitignore` excludes the downloaded archives and the extracted
-  `audio/` and `graphics/textures/` collections. A normal Git checkout
-  therefore does not contain the full local asset tree that the extraction
+- `.gitignore` excludes downloaded archives and the specific asset collections
+  and textures recreated by `init.sh`, including their license and source
+  notes. Assets without download mappings remain eligible for Git. A normal
+  Git checkout therefore does not contain the full local asset tree that the extraction
   workflow must recreate.
 - Manifest coverage is not complete: `tilesets/tileset.png` has no identified
   source. The five `ui/` files and the three `fonts/` files are committed to
@@ -244,6 +245,31 @@ The scripts use Python 3's standard-library JSON support, HTTP client, and ZIP
 reader. They do not depend on `check-jsonschema`, Click, `jq`, `unzip`, or any
 third-party Python package. The `check-jsonschema` CLI compatibility issue
 therefore does not affect download or extraction.
+
+## Git tracking policy
+
+An audit compared current files with the cached manifest packages using
+SHA-256. Ten tracked files are identical to package extraction outputs: three
+music license/credit files, six Minifantasy texture license/source-note files,
+and the character-customizer ReadMe. They were removed from Git's index;
+their local copies remain available and `init.sh` recreates them.
+
+Seven ignored files have no matching extraction output and are now tracked:
+
+- `graphics/textures/misc/HyperMaze.png`;
+- `graphics/textures/misc/invaders.png` and `invaders.xcf`;
+- `graphics/textures/misc/player.png` and `player-large.png`;
+- `graphics/textures/misc/rover.png`;
+- `graphics/textures/tilesets/tileset.png`.
+
+The six misc files remain excluded from download and extraction. Keeping them
+in Git supplies their existing bytes to a fresh checkout. Fonts, UI resources,
+definitions, shaders, and other authored files continue to be tracked.
+
+The ignore rules now name the manifest's generated directories and individual
+textures. They ignore every package-provided file, including metadata, while
+allowing assets without download mappings to be tracked. The download cache
+is ignored, and `.download-manifest/manifest.json` is explicitly retained.
 
 ## Completion criteria
 

@@ -1,20 +1,23 @@
-# Downloaded archives and extracted collections are populated locally.
+# Downloaded packages are populated from the source manifest.
 /.download-manifest/**
-/audio/**
-/graphics/textures/**
+!/.download-manifest/manifest.json
 
-# Keep directories traversable so source and metadata exceptions can apply.
-!**/
-!**/*.json
-!**/*.md
-!**/*.txt
-!**/*.url
-!**/*.py
-!**/*.sh
-!**/*.ps1
+# Collections recreated by init.sh, including their license and source notes.
+/audio/music/Minifantasy_ForgottenPlains_Music/
+/audio/sfx/DungonCrawlGameSounds/
+/audio/sfx/Minifantasy_Forgotten_Plains_SFX/
+/audio/sfx/Helton Yan's Pixel Combat - Single Files/
+/graphics/textures/MiniWorldSprites/
+/graphics/textures/Minifantasy_ForgottenPlains/
+/graphics/textures/char-customizer/
 
-# Small shared UI resources are kept with the source and font assets.
-!/graphics/textures/ui/*.[pP][nN][gG]
+# Individual textures recreated by init.sh.
+/graphics/textures/tilesets/dungeon_tiles.png
+/graphics/textures/tilesets/magecity.png
+/graphics/textures/tilesets/punyworld-overworld-tileset.png
+
+# Assets without download mappings remain eligible for Git, including misc/, UI,
+# and tilesets/tileset.png. The download manifest still excludes misc/ entirely.
 
 # Archives stay local even if they appear outside a download directory.
 *.[zZ][iI][pP]
