@@ -36,11 +36,12 @@ workflow depend on them.
 - The Minifantasy visual assets are correctly associated with Krishna
   Palacio's page. The old SFX record had incorrectly associated them with
   Leohpaz's audio page.
-- `.gitignore` excludes downloaded archives and the specific asset collections
-  and textures recreated by `init.sh`, including their license and source
-  notes. Assets without download mappings remain eligible for Git. A normal
-  Git checkout therefore does not contain the full local asset tree that the extraction
-  workflow must recreate.
+- `.gitignore` ignores `.download-manifest/`, `audio/`, and
+  `graphics/textures/` contents by default, including package metadata.
+  Explicit exceptions retain the source manifest and the selected textures
+  that downloads cannot reproduce. New packages under those directories need
+  no new ignore rule. A normal Git checkout does not contain the full local
+  asset tree that the extraction workflow must recreate.
 - Manifest coverage is not complete: `tilesets/tileset.png` has no identified
   source. The five `ui/` files and the three `fonts/` files are committed to
   the repository and are not supplied by downloads. Audit all assets outside the excluded
@@ -266,10 +267,12 @@ The six misc files remain excluded from download and extraction. Keeping them
 in Git supplies their existing bytes to a fresh checkout. Fonts, UI resources,
 definitions, shaders, and other authored files continue to be tracked.
 
-The ignore rules now name the manifest's generated directories and individual
-textures. They ignore every package-provided file, including metadata, while
-allowing assets without download mappings to be tracked. The download cache
-is ignored, and `.download-manifest/manifest.json` is explicitly retained.
+The ignore rules now cover the download cache, `audio/`, and
+`graphics/textures/` by default. Explicit `!` exceptions retain
+`.download-manifest/manifest.json` and the twelve tracked misc, UI, and
+unresolved tileset files; their parent directories are also allowed so Git can
+reach them. New packages and their metadata are ignored automatically. Adding
+another unreproducible texture requires its own tracking exception.
 
 ## Completion criteria
 

@@ -1,23 +1,29 @@
-# Downloaded packages are populated from the source manifest.
+# Downloaded packages and extraction outputs are ignored by default.
 /.download-manifest/**
+/audio/**
+/graphics/textures/**
+
+# Exceptions retain the manifest and assets that downloads cannot reproduce.
 !/.download-manifest/manifest.json
 
-# Collections recreated by init.sh, including their license and source notes.
-/audio/music/Minifantasy_ForgottenPlains_Music/
-/audio/sfx/DungonCrawlGameSounds/
-/audio/sfx/Minifantasy_Forgotten_Plains_SFX/
-/audio/sfx/Helton Yan's Pixel Combat - Single Files/
-/graphics/textures/MiniWorldSprites/
-/graphics/textures/Minifantasy_ForgottenPlains/
-/graphics/textures/char-customizer/
+# Allow the parent directories before including their selected files.
+!/graphics/textures/misc/
+!/graphics/textures/misc/HyperMaze.png
+!/graphics/textures/misc/invaders.png
+!/graphics/textures/misc/invaders.xcf
+!/graphics/textures/misc/player-large.png
+!/graphics/textures/misc/player.png
+!/graphics/textures/misc/rover.png
 
-# Individual textures recreated by init.sh.
-/graphics/textures/tilesets/dungeon_tiles.png
-/graphics/textures/tilesets/magecity.png
-/graphics/textures/tilesets/punyworld-overworld-tileset.png
+!/graphics/textures/tilesets/
+!/graphics/textures/tilesets/tileset.png
 
-# Assets without download mappings remain eligible for Git, including misc/, UI,
-# and tilesets/tileset.png. The download manifest still excludes misc/ entirely.
+!/graphics/textures/ui/
+!/graphics/textures/ui/WhiteBackdrop.png
+!/graphics/textures/ui/grid.png
+!/graphics/textures/ui/quadrants-alt.png
+!/graphics/textures/ui/quadrants.png
+!/graphics/textures/ui/white_button.png
 
 # Archives stay local even if they appear outside a download directory.
 *.[zZ][iI][pP]
