@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../schemas/graphics/sprite-tileset-manifest-2.0.schema.json",
+  "asset_class": "sprite-tileset",
+  "version": "2.0",
+  "namespace": "rover",
+  "texture": "textures/misc/rover.png",
+  "defaults": {
+    "sprite": {
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tileset": {
+      "pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  "sprites": {
+    "frame_00": {
+      "description": "rover.dat frame 0 of 4, identical to donotuse.dat. Preserves its individual rectangle; centered placement follows v2 sprites. Frame order is numerical; the source provides no playback timing.",
+      "grid": {
+        "origin": {
+          "x": 6,
+          "y": 5
+        },
+        "frame": {
+          "width": 17,
+          "height": 22
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    },
+    "frame_01": {
+      "description": "rover.dat frame 1 of 4, identical to donotuse.dat. Preserves its individual rectangle; centered placement follows v2 sprites. Frame order is numerical; the source provides no playback timing.",
+      "grid": {
+        "origin": {
+          "x": 29,
+          "y": 5
+        },
+        "frame": {
+          "width": 13,
+          "height": 21
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    },
+    "frame_02": {
+      "description": "rover.dat frame 2 of 4, identical to donotuse.dat. Preserves its individual rectangle; centered placement follows v2 sprites. Frame order is numerical; the source provides no playback timing.",
+      "grid": {
+        "origin": {
+          "x": 47,
+          "y": 5
+        },
+        "frame": {
+          "width": 17,
+          "height": 22
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    },
+    "frame_03": {
+      "description": "rover.dat frame 3 of 4, identical to donotuse.dat. Preserves its individual rectangle; centered placement follows v2 sprites. Frame order is numerical; the source provides no playback timing.",
+      "grid": {
+        "origin": {
+          "x": 69,
+          "y": 5
+        },
+        "frame": {
+          "width": 13,
+          "height": 21
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    }
+  }
+}

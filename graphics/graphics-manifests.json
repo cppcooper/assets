@@ -6,8 +6,12 @@
     "definitions/MiniWorldSprites/buildings-colored.json",
     "definitions/MiniWorldSprites/Buildings/Enemy/Orc/buildings-orc.json",
     "definitions/char-customizer/character-customizer.json",
+    "definitions/misc/hypermaze.json",
+    "definitions/misc/invaders.json",
+    "definitions/misc/rover.json",
     "definitions/tilesets/dungeon_tiles.json",
     "definitions/tilesets/magecity.json",
-    "definitions/tilesets/punyworld-overworld.json"
+    "definitions/tilesets/punyworld-overworld.json",
+    "definitions/tilesets/tileset.json"
   ]
 }

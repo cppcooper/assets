@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schemas/graphics/sprite-tileset-manifest-2.0.schema.json",
+  "asset_class": "sprite-tileset",
+  "version": "2.0",
+  "namespace": "hypermaze",
+  "texture": "textures/misc/HyperMaze.png",
+  "defaults": {
+    "sprite": {
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tileset": {
+      "pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  "tilesets": {
+    "hypermaze": {
+      "description": "The 30 tiles from hypermaze.tdat, retaining v2 bottom-left placement and original row-major indices.",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 16,
+          "height": 16
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 6,
+        "columns": 5,
+        "cell_order": "row-major"
+      }
+    }
+  }
+}
