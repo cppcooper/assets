@@ -2,20 +2,12 @@
   "description": "Lossless JSON representation of the recovered bitmap-font widths. This is compatibility metadata, not a loadable sprite/tileset or shader manifest. The current FFont loader still requires the original binary file.",
   "source_files": [
     {
-      "metrics": "font.dat",
-      "texture": "font.png"
-    },
-    {
       "metrics": "fontblack.fdat",
       "texture": "fontblack.png"
     },
     {
       "metrics": "fontwhite.fdat",
       "texture": "fontwhite.png"
-    },
-    {
-      "metrics": "whitefont.fdat",
-      "texture": "whitefont.png"
     }
   ],
   "source_encoding": "signed-16-bit-little-endian",
