@@ -1,0 +1,339 @@
+{
+  "$schema": "../../../schemas/graphics/sprite-tileset-manifest-2.0.schema.json",
+  "asset_class": "sprite-tileset",
+  "version": "2.0",
+  "namespace": "minifantasy.forgotten-plains",
+  "defaults": {
+    "sprite": {
+      "pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    },
+    "tileset": {
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "sprites": {
+    "mockup": {
+      "description": "Full-size reference composite; not a tile sheet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Minifantasy_ForgottenPlainsMockup.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 2400,
+          "height": 2400
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    },
+    "river_waterfall_hill_mockup": {
+      "description": "Full-size reference composite; not a tile sheet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Minifantasy_ForgottenPlainsRiverWaterfallHillMockup.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 2040,
+          "height": 2040
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 1,
+        "columns": 1,
+        "cell_order": "row-major"
+      }
+    }
+  },
+  "tilesets": {
+    "forgotten_plains_tiles": {
+      "description": "Complete current tilesheet on the documented 8x8-pixel grid (69 columns by 23 rows). WaterTilesInfo describes two-frame lake/ocean tiles; their cell sequence and timing are not mapped yet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/Minifantasy_ForgottenPlainsTiles.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 23,
+        "columns": 69,
+        "cell_order": "row-major"
+      }
+    },
+    "forgotten_plains_shadows": {
+      "description": "Shadow layer matching the current tilesheet's 8x8 grid.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/Minifantasy_ForgottenPlainsTilesShadows.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 23,
+        "columns": 69,
+        "cell_order": "row-major"
+      }
+    },
+    "river": {
+      "description": "Complete 8x8 grid. RiverTilesInfo documents four animation frames; their individual cell sequences and timing are not encoded yet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Minifantasy_ForgottenPlainsRiver.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 36,
+        "columns": 20,
+        "cell_order": "row-major"
+      }
+    },
+    "river_curves": {
+      "description": "Complete 8x8 grid. RiverTilesInfo documents four animation frames; their individual cell sequences and timing are not encoded yet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Minifantasy_ForgottenPlainsRiverCurves.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 18,
+        "columns": 33,
+        "cell_order": "row-major"
+      }
+    },
+    "river_curves_diagonal_only": {
+      "description": "Complete 8x8 grid. RiverTilesInfo documents four animation frames; their individual cell sequences and timing are not encoded yet.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 18,
+        "columns": 33,
+        "cell_order": "row-major"
+      }
+    },
+    "river_to_lake_transition": {
+      "description": "Complete 8x8 grid for the river-to-lake transitions.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Minifantasy_ForgottenPlainsRiverToLakeTransition.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 16,
+        "columns": 18,
+        "cell_order": "row-major"
+      }
+    },
+    "waterfall_drop_layer": {
+      "description": "Waterfall drop layer, sliced on the documented 8x8 grid.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Waterfall/Minifantasy_ForgottenPlainsWaterfallDropLayer.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 7,
+        "columns": 17,
+        "cell_order": "row-major"
+      }
+    },
+    "waterfall_ground_layer": {
+      "description": "Waterfall ground layer, sliced on the documented 8x8 grid.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Waterfall/Minifantasy_ForgottenPlainsWaterfallGroundLayer.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 7,
+        "columns": 17,
+        "cell_order": "row-major"
+      }
+    },
+    "waterfall_splash_effect_layer": {
+      "description": "Waterfall splash effect layer, sliced on the documented 8x8 grid.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/Tileset/River/Waterfall/Minifantasy_ForgottenPlainsWaterfallSplashEffectLayer.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 7,
+        "columns": 17,
+        "cell_order": "row-major"
+      }
+    },
+    "props": {
+      "description": "Decoration sprite sheet on the pack's 8x8 pixel grid (22 columns by 10 rows).",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/props/Minifantasy_ForgottenPlainsProps.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 10,
+        "columns": 22,
+        "cell_order": "row-major"
+      }
+    },
+    "props_shadows": {
+      "description": "Shadow layer matching the props sheet's 8x8 grid.",
+      "texture": "textures/Minifantasy_ForgottenPlains/Minifantasy_ForgottenPlains_Assets/props/Minifantasy_ForgottenPlainsPropsShadows.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 10,
+        "columns": 22,
+        "cell_order": "row-major"
+      }
+    },
+    "legacy_3_0_tiles": {
+      "description": "Outdated Minifantasy version 3.0 tilesheet retained by the source pack for compatibility.",
+      "texture": "textures/Minifantasy_ForgottenPlains/_Legacy_Assets/(legacy3.0)Minifantasy_ForgottenPlainsTiles.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 22,
+        "columns": 69,
+        "cell_order": "row-major"
+      }
+    },
+    "legacy_3_0_shadows": {
+      "description": "Outdated Minifantasy version 3.0 shadow sheet retained by the source pack for compatibility.",
+      "texture": "textures/Minifantasy_ForgottenPlains/_Legacy_Assets/(legacy3.0)Minifantasy_ForgottenPlainsTilesShadows3.0.png",
+      "grid": {
+        "origin": {
+          "x": 0,
+          "y": 0
+        },
+        "frame": {
+          "width": 8,
+          "height": 8
+        },
+        "spacing": {
+          "x": 0,
+          "y": 0
+        },
+        "rows": 22,
+        "columns": 69,
+        "cell_order": "row-major"
+      }
+    }
+  }
+}
