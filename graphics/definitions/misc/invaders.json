@@ -19,8 +19,8 @@
     }
   },
   "sprites": {
-    "section_00": {
-      "description": "invaders.sdat section 0; original flat frame indices 0-1. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_1": {
+      "description": "aka. Malorie",
       "grid": {
         "origin": {
           "x": 0,
@@ -39,8 +39,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_01": {
-      "description": "invaders.sdat section 1; original flat frame indices 2-3. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_2": {
+      "description": "aka. Archer",
       "grid": {
         "origin": {
           "x": 0,
@@ -59,8 +59,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_02": {
-      "description": "invaders.sdat section 2; original flat frame indices 4-5. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_3": {
+      "description": "aka. Lana",
       "grid": {
         "origin": {
           "x": 0,
@@ -79,8 +79,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_03": {
-      "description": "invaders.sdat section 3; original flat frame indices 6-7. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_4": {
+      "description": "aka. Cheryl",
       "grid": {
         "origin": {
           "x": 0,
@@ -99,8 +99,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_04": {
-      "description": "invaders.sdat section 4; original flat frame indices 8-9. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_5": {
+      "description": "aka. Cyril",
       "grid": {
         "origin": {
           "x": 0,
@@ -119,8 +119,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_05": {
-      "description": "invaders.sdat section 5; original flat frame indices 10-11. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_6": {
+      "description": "aka. Ray",
       "grid": {
         "origin": {
           "x": 0,
@@ -139,8 +139,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_06": {
-      "description": "invaders.sdat section 6; original flat frame indices 12-13. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_7": {
+      "description": "aka. Krieger",
       "grid": {
         "origin": {
           "x": 0,
@@ -159,8 +159,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_07": {
-      "description": "invaders.sdat section 7; original flat frame indices 14. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "enemy_8": {
+      "description": "UFO saucer, aka. Woodie",
       "grid": {
         "origin": {
           "x": 0,
@@ -179,8 +179,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_08": {
-      "description": "invaders.sdat section 8; original flat frame indices 15. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "explosion": {
+      "description": "death to invaders",
       "grid": {
         "origin": {
           "x": 0,
@@ -199,8 +199,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_09": {
-      "description": "invaders.sdat section 9; original flat frame indices 16. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "bullet": {
+      "description": "lazer beams",
       "grid": {
         "origin": {
           "x": 0,
@@ -219,8 +219,8 @@
         "cell_order": "row-major"
       }
     },
-    "section_10": {
-      "description": "invaders.sdat section 10; original flat frame indices 17-18. Apply draw scale 0.42, alpha 1, and offset (0, 0) at submission. The source defines manually selected frames, not timed animation clips.",
+    "player": {
+      "description": "the player",
       "grid": {
         "origin": {
           "x": 0,
