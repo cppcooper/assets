@@ -1,0 +1,50 @@
+/* Rover::Draw() uses an OpenGL bottom-left origin. RmlUi bottom offsets
+   preserve its (50, 50) and (50, 30) text-cell anchors at any window size.
+
+   FFont's 28px value scales an entire bitmap cell; the visible glyph is
+   approximately half the cell height. The 14px outline font and 28px line
+   box reproduce that scale with the shared college-hud font. The source
+   font.png/font.dat names are absent here, so exact glyph metrics and ink
+   color cannot be recovered. Black matches the available fontblack atlas.
+   The font declaration below loads college-hud when this stylesheet loads. */
+/* This bundled parser resolves font src against the process working directory.
+   Launch from the repository root, which contains assets/. */
+@font-face {
+    font-family: college-hud;
+    src: "assets/fonts/DejaVuSans.ttf";
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: college-hud;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000000;
+    pointer-events: none;
+}
+
+#rover-panel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 256px;
+    height: 128px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.stat {
+    position: absolute;
+    left: 50px;
+    height: 28px;
+    margin: 0;
+    white-space: pre;
+    pointer-events: none;
+}
+
+#rover-recursion-line { bottom: 50px; }
+#rover-moves-line { bottom: 30px; }

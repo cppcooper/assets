@@ -1,0 +1,102 @@
+/* Source viewport: 1000x600. Bottom anchors also preserve the original
+   OpenGL coordinates when the viewport height changes. The game retains
+   its clear color (0.8, 0.6, 0.7); the HUD itself is transparent.
+
+   The source uses a missing font.png bitmap; college-hud is the supplied
+   scalable-font replacement. The available legacy atlases put glyphs in
+   roughly half of each square cell, so raster sizes 20/36 map to outline
+   sizes 10/18. Glyph metrics and the chosen black text color cannot be
+   matched exactly without that project's missing legacy bitmap.
+*/
+/* This bundled parser resolves font src against the process working directory.
+   Launch from the repository root, which contains assets/. */
+@font-face {
+    font-family: college-hud;
+    src: "assets/fonts/DejaVuSans.ttf";
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: college-hud;
+    color: #000000;
+    pointer-events: none;
+}
+
+/* FFont::print offsets x by .08*size and y by -.3*size, then draws
+   a size-by-size quad. At size 20 its first quad starts at x=1.6,
+   top=viewport-height-589; subsequent list rows move down by 13px.
+*/
+#found-words {
+    position: absolute;
+    left: 1.6px;
+    bottom: 589px;
+    width: 174px;
+    height: 0;
+    overflow: visible;
+}
+
+.word-entry {
+    display: block;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 13px;
+    white-space: nowrap;
+}
+
+/* Letter quad origin: (175+.08*36, 525-.3*36+36) in OpenGL.
+   Host-created cells use left:26*x px and top:26*y px.
+*/
+#puzzle-letters {
+    position: absolute;
+    left: 177.88px;
+    bottom: 550.2px;
+    width: 0;
+    height: 0;
+    overflow: visible;
+}
+
+.letter-cell {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+/* The source scales the highlight sprite to 24px and draws its bottom
+   left at (175+26*x, 525-26*y). Frame zero matches the current code:
+   highlight is a pointer, so the expression highlight[2] does not invoke
+   sprite::operator[] and leaves frame_index at zero. Change the sprite
+   rectangle to 200px 0px 100px 100px if frame two is intentionally chosen.
+*/
+@spritesheet word-tiles {
+    src: ../../textures/tilesets/tileset.png;
+    word-solution: 0px 0px 100px 100px;
+}
+
+#solution-cells {
+    position: absolute;
+    left: 175px;
+    bottom: 549px;
+    width: 0;
+    height: 0;
+    overflow: visible;
+}
+
+.solution-cell {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    decorator: image(word-solution);
+}

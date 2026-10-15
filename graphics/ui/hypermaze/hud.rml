@@ -1,0 +1,19 @@
+<rml>
+<head>
+    <title>Hypermaze debug HUD</title>
+    <link type="text/rcss" href="hud.rcss" />
+</head>
+<body>
+    <!-- Mirrors debugger::Draw(). Show only while debugger.m_Enabled is true. -->
+    <div id="debug-hud">
+        <div class="debug-row"><span class="debug-label">Player:</span><span id="player-coordinates">0, 0</span></div>
+        <div class="debug-row"><span class="debug-label">Traversal:</span><span id="traversal-coordinates">0, 0</span></div>
+        <div class="debug-row"><span class="debug-label">Terrain:</span><span id="terrain-coordinates">0, 0</span></div>
+        <div class="debug-row"><span class="debug-label">Travel Dir:</span><span id="travel-direction">0</span></div>
+        <div class="debug-row"><span class="debug-label">Traversal Dir:</span><span id="traversal-direction">0</span></div>
+        <div class="debug-row"><span class="debug-label">Terrain ID:</span><span id="terrain-id">0x0</span></div>
+        <div class="debug-row"><span class="debug-label">Node ID:</span><span id="node-id">0x0</span></div>
+        <div class="debug-row"><span class="debug-label">NodeLink ID:</span><span id="node-link-id">0x0</span></div>
+    </div>
+</body>
+</rml>

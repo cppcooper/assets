@@ -1,0 +1,34 @@
+<rml>
+<head>
+    <title>Word search HUD</title>
+    <link type="text/rcss" href="hud.rcss" />
+</head>
+<body id="word-hud">
+    <!-- Source: projects/word/src/gameplay/WordSearch.cpp, WordSearch::Draw.
+         These containers are intentionally empty: word_data_1.wrd is not
+         present in this checkout. Populate them from the actual WordBox and
+         Words_Found snapshot rather than displaying invented puzzle data.
+
+         For each Words_Found[i], append a div.word-entry to found-words.
+         Set its text to the word, or to ->WORD<- when i == Selected_Word.
+         Use text nodes (or escape markup) for the literal arrow characters.
+         List entries advance 13px vertically; do not add buttons or headings.
+
+         For each visible solution letter at column x and row y, append a
+         div.solution-cell to solution-cells with left:26*x px; top:26*y px.
+         Source coordinates follow the word's start and locale->Dir values.
+
+         For each WordBox letter at column x and row y, append a
+         div.letter-cell to puzzle-letters with left:26*x px; top:26*y px.
+         Its only text is WordBox::Get_Letter(x,y).
+
+         Keep existing arrow-key selection, Space solution toggling, and
+         Escape shutdown in game input. This document has no click events.
+         hud.rcss loads college-hud from assets/fonts/DejaVuSans.ttf.
+         Launch with the repository root as the working directory.
+    -->
+    <div id="found-words"></div>
+    <div id="solution-cells"></div>
+    <div id="puzzle-letters"></div>
+</body>
+</rml>

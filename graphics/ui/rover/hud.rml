@@ -1,0 +1,14 @@
+<rml>
+<head>
+    <title>Rover HUD</title>
+    <link type="text/rcss" href="hud.rcss" />
+</head>
+<body id="rover-hud">
+    <!-- Rover::Draw(), projects/rover/src/actors/rover.cpp:359-364.
+         The source calls this sprite white_button, but the HUD is passive.
+         Both counters start at zero and must be updated from the rover state. -->
+    <img id="rover-panel" src="../../textures/ui/white_button.png" />
+    <div id="rover-recursion-line" class="stat">Recursion Level:  <span id="rover-recursion-level">0</span></div>
+    <div id="rover-moves-line" class="stat">Total Moves:  <span id="rover-total-moves">0</span></div>
+</body>
+</rml>

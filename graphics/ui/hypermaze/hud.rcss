@@ -1,0 +1,43 @@
+/* Source: projects/hypermaze/src/core/Debugger.cpp, debugger::Draw().
+   RmlUi uses a top-left origin. The source starts at (10, height - 15)
+   with an empty first line, then prints eight white 28px text rows.
+   The font declaration below loads college-hud when this stylesheet loads.
+   Initial values are placeholders; the host supplies the debugger values. */
+/* This bundled parser resolves font src against the process working directory.
+   Launch from the repository root, which contains assets/. */
+@font-face {
+    font-family: college-hud;
+    src: "assets/fonts/DejaVuSans.ttf";
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: college-hud;
+    font-size: 28px;
+    line-height: 28px;
+    color: #ffffff;
+    pointer-events: none;
+}
+
+#debug-hud {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    padding-top: 28px;
+}
+
+.debug-row {
+    display: flex;
+    height: 28px;
+    white-space: nowrap;
+}
+
+.debug-label {
+    width: 220px;
+    flex-shrink: 0;
+}

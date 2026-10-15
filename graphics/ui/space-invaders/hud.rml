@@ -1,0 +1,15 @@
+<rml>
+<head>
+    <title>Space Invaders HUD</title>
+    <link type="text/rcss" href="hud.rcss" />
+</head>
+<body>
+    <!-- OldSpaceInvaders::Draw(), src/SpaceInvaders.cpp:111-129.
+         The values below are preview placeholders: replace them from game state.
+         Preserve the literal spaces; the original renderer used them for layout.
+         There is no life icon, menu, or game-over overlay in the source. -->
+    <div id="high-score-field" class="hud-field">High Score :    <span id="high-score">0</span>    </div>
+    <div id="score-field" class="hud-field">      Score :     <span id="score">0</span></div>
+    <div id="lives-field" class="hud-field"><span id="lives">5</span>x                  </div>
+</body>
+</rml>
