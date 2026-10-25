@@ -37,6 +37,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_2": {
@@ -57,6 +76,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_3": {
@@ -77,6 +115,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_4": {
@@ -97,6 +154,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_5": {
@@ -117,6 +193,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_6": {
@@ -137,6 +232,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_7": {
@@ -157,6 +271,25 @@
         "rows": 1,
         "columns": 2,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            },
+            {
+              "cell": {
+                "index": 1
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "enemy_8": {
@@ -177,6 +310,19 @@
         "rows": 1,
         "columns": 1,
         "cell_order": "row-major"
+      },
+      "animations": {
+        "default": {
+          "frames": [
+            {
+              "cell": {
+                "index": 0
+              },
+              "duration_ms": 2000
+            }
+          ],
+          "loop": true
+        }
       }
     },
     "explosion": {
