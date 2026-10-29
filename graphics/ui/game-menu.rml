@@ -8,6 +8,7 @@
         <div id="pause-page" class="menu-page">
             <h1>Paused</h1>
             <input id="resume" class="menu-button" type="button" value="Resume" data-action="resume" />
+            <input id="new-game" class="menu-button" type="button" value="New Game" data-action="new-game" />
             <input id="settings" class="menu-button" type="button" value="Settings" disabled="disabled" />
             <input id="high-scores" class="menu-button" type="button" value="High Scores" data-action="high-scores" />
             <input id="quit" class="menu-button" type="button" value="Quit" data-action="quit" />
