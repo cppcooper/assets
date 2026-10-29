@@ -1,0 +1,73 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000b8;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.menu-panel {
+    width: 440px;
+    max-width: 92%;
+    max-height: 94%;
+    box-sizing: border-box;
+    padding: 26px;
+    background-color: #141b25;
+    border-width: 1px;
+    border-color: #65798d;
+    overflow: auto;
+}
+
+.menu-page { display: none; }
+h1 { display: block; margin: 0 0 22px; font-size: 32px; text-align: center; }
+p { display: block; margin: 12px 0 20px; font-size: 18px; }
+form { display: block; }
+
+.menu-button {
+    display: block;
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: 10px 12px;
+    background-color: #30495f;
+    border-width: 1px;
+    border-color: #59758c;
+    color: #ffffff;
+    text-align: center;
+    tab-index: auto;
+}
+.menu-button:hover, .menu-button:focus { background-color: #416681; border-color: #b0ddff; }
+.menu-button:active { background-color: #223a4d; }
+.menu-button:disabled { background-color: #222b35; border-color: #354351; color: #788591; }
+.secondary { background-color: #253140; }
+
+.score-row { display: flex; align-items: center; padding: 7px 0; font-size: 18px; }
+.score-row:nth-child(even) { background-color: #1c2835; }
+.rank { width: 30px; flex-shrink: 0; color: #9db1c4; text-align: center; }
+.name { flex-grow: 1; padding: 0 8px; overflow: hidden; white-space: nowrap; }
+.points { width: 90px; flex-shrink: 0; padding-right: 8px; text-align: right; }
+
+#entry-score { display: block; font-size: 26px; text-align: center; }
+label { display: block; margin-bottom: 8px; font-size: 18px; }
+#player-name {
+    display: block;
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f2f5f8;
+    color: #101923;
+    border-width: 1px;
+    border-color: #65798d;
+    tab-index: auto;
+}
+#player-name:focus { border-color: #b0ddff; }
+#menu-error { display: none; margin-top: 16px; color: #ffb5a8; font-size: 17px; }
+scrollbarvertical { width: 10px; }
+scrollbarvertical slidertrack { background-color: #141b25; }
+scrollbarvertical sliderbar { min-height: 24px; background-color: #65798d; }
